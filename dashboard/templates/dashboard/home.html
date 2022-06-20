@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand">파이썬 학습조직</a>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container">
+            <h1> Dashboard Project </h1>
+            <p>
+                지금까지 학습한 과정으로 각 주차에 학습할 데이터를 불러오고 그 데이터를 시각화하여 나타내보자.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>yong-jay</h2>
+                <img src="{% static 'images/1.png' %}" alt="" width="320" height="240">
+            </div>
+            <div class="col-md-4">
+                <h2>hong-seul</h2>
+                <img src="{% static 'images/2.png' %}" alt="" width="320" height="240">
+            </div>
+            <div class="col-md-4">
+                <h2>A-jung</h2>
+                <img src="{% static 'images/3.png' %}" alt="" width="320" height="240">
+            </div>
+            
+        </div>
+
+    <hr>
+
+    <footer>
+        <p>파이썬 학습조직 &copy; Company 2022</p>
+    </footer>
+    </div>
+
+  </div> <!-- /container -->
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
